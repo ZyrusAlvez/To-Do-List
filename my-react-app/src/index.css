@@ -1,38 +1,98 @@
-.organizer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+body{
+    background-color: hsla(0, 0%, 0%, 0.507);
 }
 
 
-.card{
-    border: 1px solid black;
-    width: 180px;
-    height: auto;
+.main{
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.226);
-    margin: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
-.card .card-picture{
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 20px;
+.title{
+    font-size: 3rem;
+}  
+
+#input{
+    height: 32px;
+    width: 200px;
+    border: 1px solid hsla(0, 0%, 0%, 0.422);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#input:focus{
+    outline: none;
+    border: none;
+}
+
+.add-btn{
+    height: 35px;
+    width: 50px;
+    color: white;
+    background-color: rgb(25, 238, 54);
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: -1px;
+    font-size: bold;
+}
+.task-holder{
     margin-top: 10px;
+    display: flex;
+    width: 350px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.207);
 }
 
-.card .card-name{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    margin-bottom: 5px;
+.task-holder .button-div{
+    margin-left: 20px;
+    display: flex;
 }
 
-.card .card-description{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 15x;
-    margin-bottom: 20px;
+.task-title{
+    width: 200px;
+    word-wrap: break-word;
+    text-align: center;
+
 }
+
+.task-holder .button-div .delete{
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 30px;
+}
+
+.task-holder .button-div .up{
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+
+}
+
+.task-holder .button-div .down{
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
